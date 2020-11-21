@@ -11,3 +11,7 @@
   padding: 0;
   margin: 15px 0;
 }
+
+.nav-links a {
+  text-decoration: none;
+}
