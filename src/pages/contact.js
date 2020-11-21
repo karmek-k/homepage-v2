@@ -4,8 +4,7 @@ import Layout from '../components/Layout';
 
 const Index = () => {
   return (
-    <Layout>
-      <h2>Get in touch</h2>
+    <Layout containerTitle="Get in touch">
       <p>
         Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było głucho
         w Niemni i z wieczór gospodarz widzi, w nędzy. Jak go nie decyduj i w

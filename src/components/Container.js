@@ -1,7 +1,12 @@
 import React from 'react';
 
-const Container = ({ content }) => {
-  return <main>{content}</main>;
+const Container = ({ title, content }) => {
+  return (
+    <main>
+      {title ? <h2>{title}</h2> : null}
+      {content}
+    </main>
+  );
 };
 
 export default Container;
