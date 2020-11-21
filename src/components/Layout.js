@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
       <Navbar />
       <hr />
       <Container content={children} />
+      <hr />
       <Footer />
     </div>
   );
