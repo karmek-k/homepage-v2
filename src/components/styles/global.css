@@ -18,3 +18,9 @@ a {
 a:visited {
   color: black;
 }
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #eee;
+  padding: 2px;
+}
