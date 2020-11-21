@@ -1,0 +1,13 @@
+.nav-title {
+  margin: 0;
+  font-size: 48pt;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
