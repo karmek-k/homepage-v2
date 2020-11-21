@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `Bartosz Gleń`,
@@ -6,15 +8,23 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`
-      }
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/images`
+    //   }
+    // },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: process.env.DATOCMS_TOKEN,
+        preview: false,
+        disableLiveReload: false
+      }
+    }
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
