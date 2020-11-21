@@ -7,12 +7,12 @@ import Footer from './Footer';
 import styles from './styles/layout.module.css';
 import './styles/global.css';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, containerTitle }) => {
   return (
     <div className={styles.layout}>
       <Navbar />
       <hr />
-      <Container content={children} />
+      <Container content={children} title={containerTitle} />
       <hr />
       <Footer />
     </div>

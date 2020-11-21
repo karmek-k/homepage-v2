@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 
 const Index = () => {
   return (
-    <Layout>
+    <Layout containerTitle="Hello world!">
       <h2>Hello world!</h2>
       <p>
         Litwo! Ojczyzno moja! Ty jesteś jak zdrowie. Ile cię trzeba było głucho
