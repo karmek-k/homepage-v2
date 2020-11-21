@@ -10,7 +10,7 @@ const SkillCategory = ({ skills, categoryName }) => {
     <>
       <h3 className={styles.skillCategoryTitle}>{categoryName}</h3>
       {skills.map(s => (
-        <Skill name={s.name} description={s.description} />
+        <Skill key={s.name} name={s.name} description={s.description} />
       ))}
     </>
   );
