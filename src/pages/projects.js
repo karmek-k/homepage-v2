@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 
-const Index = () => {
+const Projects = () => {
   return (
     <Layout containerTitle="My projects">
       <p>
@@ -28,4 +28,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Projects;
