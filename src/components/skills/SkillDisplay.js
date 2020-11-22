@@ -1,14 +1,37 @@
 import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 
 import SkillCategory from './SkillCategory';
 
-const SkillDisplay = ({ skills }) => {
-  const categories = skills.map(s => s.category.categoryName);
-  const uniqueCategories = [...new Set(categories)].sort();
+const query = graphql`
+  {
+    allDatoCmsSkillCategory {
+      nodes {
+        categoryName
+      }
+    }
+  }
+`;
 
-  return uniqueCategories.map(cat => (
-    <SkillCategory key={cat} categoryName={cat} skills={skills} />
-  ));
+const SkillDisplay = ({ skills }) => {
+  return (
+    <StaticQuery
+      query={query}
+      render={data => {
+        const categories = data.allDatoCmsSkillCategory.nodes.map(
+          c => c.categoryName
+        );
+
+        return categories.map(category => (
+          <SkillCategory
+            key={category}
+            categoryName={category}
+            skills={skills}
+          />
+        ));
+      }}
+    />
+  );
 };
 
 export default SkillDisplay;
