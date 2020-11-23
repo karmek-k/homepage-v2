@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
 
 import Layout from '../components/Layout';
+import styles from '../components/contact/styles/list.module.css';
 
 export const query = graphql`
   {
@@ -15,7 +16,9 @@ export const query = graphql`
 const Contact = ({ data }) => {
   return (
     <Layout containerTitle="Get in touch">
-      <ReactMarkdown>{data.datoCmsContact.content}</ReactMarkdown>
+      <ReactMarkdown className={styles.contactList}>
+        {data.datoCmsContact.content}
+      </ReactMarkdown>
     </Layout>
   );
 };
