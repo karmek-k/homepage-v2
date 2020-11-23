@@ -8,11 +8,14 @@ const Project = ({ projectData }) => {
     <section className={styles.projectSection}>
       <h3>{projectData.name}</h3>
       <ReactMarkdown>{projectData.description}</ReactMarkdown>
-      {/* <ul>
+
+      <b>Skills:</b>
+      <ul className={styles.skillList}>
         {projectData.skills.map(skill => (
-          <li>{skill}</li>
+          <li>{skill.name}</li>
         ))}
-      </ul> */}
+      </ul>
+
       <a href={projectData.repoLink} target="_blank" rel="noopener noreferrer">
         Click here to visit the repo of {projectData.name}
       </a>
