@@ -18,7 +18,7 @@ export const query = graphql`
   }
 `;
 
-const Index = ({ data }) => {
+const Skills = ({ data }) => {
   return (
     <Layout containerTitle="My skills">
       <SkillDisplay skills={data.allDatoCmsSkill.nodes} />
@@ -26,4 +26,4 @@ const Index = ({ data }) => {
   );
 };
 
-export default Index;
+export default Skills;

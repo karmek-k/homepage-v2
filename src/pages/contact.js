@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 
-const Index = () => {
+const Contact = () => {
   return (
     <Layout containerTitle="Get in touch">
       <p>
@@ -28,4 +28,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Contact;

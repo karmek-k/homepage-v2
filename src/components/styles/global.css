@@ -5,8 +5,12 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+ul {
+  list-style: square;
+}
+
 body {
-  margin: 0;
+  margin: 0 8px;
   padding: 0;
 }
 
