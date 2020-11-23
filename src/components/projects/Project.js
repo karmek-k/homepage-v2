@@ -12,7 +12,7 @@ const Project = ({ projectData }) => {
       <b>Skills:</b>
       <ul className={styles.skillList}>
         {projectData.skills.map(skill => (
-          <li>{skill.name}</li>
+          <li key={skill.name}>{skill.name}</li>
         ))}
       </ul>
 
